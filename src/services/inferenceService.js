@@ -24,7 +24,7 @@ async function predictClassification(model, image) {
             suggestion = "Penyakit kanker tidak terdeteksi."
         }
  
-        return { label, suggestion, confidenceScore };
+        return { label, suggestion:suggestion, confidenceScore };
     } catch (error) {
         throw new InputError('Terjadi kesalahan dalam melakukan prediksi')
     }
